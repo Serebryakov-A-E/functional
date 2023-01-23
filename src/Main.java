@@ -5,10 +5,10 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        v1(scanner);
+        showStatisticsV1(scanner);
     }
 
-    public static void v1(Scanner scanner) {
+    public static void showStatisticsV1(Scanner scanner) {
         List<String> words = new ArrayList<>();
         List<Integer> values = new ArrayList<>();
 
@@ -48,9 +48,9 @@ public class Main {
         } catch (IndexOutOfBoundsException ignore) {}
     }
 
-    public static void v2(Scanner scanner) {
+    public static void showStatisticsV2(Scanner scanner) {
         Map<String, Integer> map = new HashMap<>();
-
+        System.out.print("Введите текст:");
         while (scanner.hasNext()) {
             String str = scanner.next();
             if (map.containsKey(str)) {
@@ -90,9 +90,9 @@ public class Main {
         }
     }
 
-    public static void v3(Scanner scanner) {
+    public static void showStatisticsV3(Scanner scanner) {
         Map<String, Integer> map = new HashMap<>();
-
+        System.out.print("Введите текст:");
         while (scanner.hasNext()) {
             String str = scanner.next();
             if (map.containsKey(str)) {
